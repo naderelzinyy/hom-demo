@@ -22,12 +22,12 @@ function App() {
 
       {/* TextSlider with transition */}
       <div className={`transition-opacity duration-500
-${showTextSlider ? 'opacity-100' : 'opacity-0'}`}>
-<TextSlider className="p-6" />
-</div>
+        ${showTextSlider ? 'opacity-50' : 'opacity-100'}`}>
+        {showTextSlider ? <TextSlider className="p-6" /> :<HomePage />}
+      </div>
 
   {/* HomePage - initially hidden */}
-  { !showTextSlider && <HomePage /> }
+  { !showTextSlider && <HomePage />}
 </div>
 );
 }

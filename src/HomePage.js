@@ -17,7 +17,9 @@ const HomePage = () => {
           required
         />
         <span className="text-xs text-custom-pink mb-2">* Text field is required</span>
-        <button type="submit" className="btn px-6 py-2 bg-pink-600 text-white font-semibold rounded-full">Submit</button>
+        <button type="submit" className="btn px-6 py-2
+         bg-custom-pink text-white font-semibold
+          rounded-full cursor-pointer hover:bg-pink-600 ">Submit</button>
       </form>
       
       <div className="w-full max-w-md mb-6 text-center">
