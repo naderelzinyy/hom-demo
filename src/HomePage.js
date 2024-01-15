@@ -13,7 +13,7 @@ const HomePage = () => {
         <input
           type="text"
           placeholder="Email or phone number"
-          className="form-input w-full mb-2 px-4 py-2 border rounded-full text-center"
+          className="form-input w-full mb-2 px-4 py-2 border rounded-full text-center outline-black"
           required
         />
         <span className="text-xs text-custom-pink mb-2">* Text field is required</span>
@@ -23,7 +23,7 @@ const HomePage = () => {
       <div className="w-full max-w-md mb-6 text-center">
         <h3 className="text-2xl text-custom-pink mb-2">Contact us</h3>
         {/* Replace with actual icons */}
-        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2">
+        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2 hover:bg-gray-200 cursor-pointer">
           <WhatsAppIcon className="fill-current text-black w-6 h-6" />
           <span className="text-xl">Whats App</span>
         </div>
@@ -31,24 +31,24 @@ const HomePage = () => {
         <h3 className="text-2xl text-custom-pink mb-2">Follow us</h3>
         <div className="flex flex-col justify-center">
           
-        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2">
+        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2 hover:bg-gray-200 cursor-pointer">
           <SnapchatIcon className="fill-current text-black w-6 h-6" />
           <span className="text-xl">Snapchat</span>
         </div>
 
 
-        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2">
+        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2 hover:bg-gray-200 cursor-pointer">
           <InstagramIcon className="fill-current text-black w-6 h-6" />
           <span className="text-xl">Instagram</span>
         </div>
 
 
-        <div className="flex justify-center mb-4 border-2  rounded-lg py-2 border-slate-950 gap-2">
+        <div className="flex justify-center mb-4 border-2  rounded-lg py-2 border-slate-950 gap-2 hover:bg-gray-200 cursor-pointer">
           <TiktokIcon className="fill-current text-black w-6 h-6" />
           <span className="text-xl">Tiktok</span>
         </div>
 
-        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2">
+        <div className="flex justify-center mb-4 border-2 rounded-lg py-2 border-slate-950 gap-2 hover:bg-gray-200 cursor-pointer">
           <FacebookIcon className="fill-current text-black w-6 h-6" />
           <span className="text-xl">Facebook</span>
         </div>

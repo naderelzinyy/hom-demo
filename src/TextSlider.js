@@ -8,13 +8,13 @@ const TextSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(current => (current + 1) % texts.length);
-    }, 3000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [texts.length]);
 
   return (
     <TransitionGroup className="relative">
-      <CSSTransition key={current} timeout={350} classNames="text-slider-transition">
+      <CSSTransition key={current} timeout={500} classNames="text-slider-transition">
         <div className="absolute flex items-center justify-center w-full bg-custom-blue">
           <p className="font-belgian text-8xl text-custom-blue text-center">{texts[current]}</p>
         </div>
