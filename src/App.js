@@ -27,7 +27,6 @@ function App() {
       </div>
 
   {/* HomePage - initially hidden */}
-  { !showTextSlider && <HomePage />}
 </div>
 );
 }
