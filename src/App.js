@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './HomePage';
+import TextSlider from './TextSlider';
+import Logo from './assets/logo.png';
 
 function App() {
+  const isLoading = false;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="flex flex-col items-center justify-top w-full  bg-white -mt-24 pb-20">
+      <img src={Logo} alt="" className="max-w-2xs md:max-w-sm md:max-h-sm lg:max-w-md"/>
+      {isLoading ? <TextSlider className="p-6"></TextSlider> : <HomePage></HomePage>}
     </div>
   );
 }
