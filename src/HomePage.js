@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ReactComponent as WhatsAppIcon } from './assets/logos_whatsapp-icon.svg';
 import { ReactComponent as SnapchatIcon } from './assets/snapchat.svg';
 import { ReactComponent as InstagramIcon } from './assets/skill-icons_instagram.svg';
 import { ReactComponent as TiktokIcon } from './assets/logos_tiktok-icon.svg';
 import { ReactComponent as FacebookIcon } from './assets/logos_facebook.svg';
+import Popup from './Popup';
 
 const HomePage = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleOpenPopup = () => setShowPopup(true);
+  const handleClosePopup = () => setShowPopup(false);
+
+
   return (
     <div className="flex flex-col items-center justify-center bg-white -mt-24 sm:-mt-15 md:-mt-22 font-belgian">
       <p className="text-3xl font-thin text-custom-pink mb-6">Subscribe</p>
@@ -57,10 +64,10 @@ const HomePage = () => {
 
         </div>
       </div>
-
+      {showPopup && <Popup onClose={handleClosePopup}/>}
       <div className="text-center text-xl mb-6">
         <p>Interested in collaboration?</p>
-        <a href="/" className="font-bold underline text-custom-pink text-xl">Join our influencer list!</a>
+        <button onClick={handleOpenPopup} className="font-bold underline text-custom-pink text-xl">Join our influencer list!</button>
       </div>
 
       <footer className="text-xs text-center text-gray-500">
