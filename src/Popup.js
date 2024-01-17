@@ -4,7 +4,7 @@ import DropdownTextField from './TextfieldDropdown';
 const Popup = ({ onClose }) => {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-        <div className="bg-white p-6 rounded-lg shadow w-1/4 space-y-4">
+        <div className="bg-white p-6 rounded-lg shadow  sm:w-1/2 md:w-1/3 space-y-4">
           <h2 className="text-2xl text-center font-bold text-custom-pink">Join the Mistic squad!</h2>
           <div className="flex flex-col items-center">
             <input
